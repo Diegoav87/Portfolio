@@ -108,24 +108,24 @@
     <section class="contact-section">
         <div class="main-container">
             <h2 class="project-title" id="contact">Contact</h2>
-            <form class="contact-form" name="contact" netlify>
+            <form method="POST" class="contact-form" name="contact" netlify>
                 <div class="row">
                     <div class="col">
                         <label>Name</label>
-                        <input type="text">
+                        <input type="text" name="name">
                     </div>
                     <div class="col">
                         <label>Email</label>
-                        <input type="text">
+                        <input type="text" name="email">
                     </div>
                 </div>
                 <div>
                     <label>Subject</label>
-                    <input type="text">
+                    <input type="text" name="subject">
                 </div>
                 <div>
                     <label>Message</label>
-                    <textarea cols="30" rows="5"></textarea>
+                    <textarea name="message" cols="30" rows="5"></textarea>
                 </div>
                 <button type="submit" class="contact-btn">Submit</button>
             </form>
