@@ -11,14 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1b2de11c6b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 <body>
+    <div class="overlay"></div>
     <nav class="navbar navbar-expand-lg navbar-dark p-4 mb-4">
         <a class="navbar-brand" href="#">Diego</a>
-            <div class="ml-auto nav-right">
+            <div class="ml-auto nav-right" id="wide-links">
                 <a href="#about" class="mr-4">About</a>
                 <a href="#projects" class="mr-4">Projects</a>
                 <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn-burger"></div>
+            </div>
+            <div class="side-menu">
+                <ul class="menu-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
     </nav>
 
@@ -30,7 +42,7 @@
         </div>
     </section>
 
-    <section class="about-section"  id="about">
+    <section class="about-section"  id="about" data-scroll>
         <div class="main-container">
             <div class="grid-about">
                 <div class="about-info">
@@ -63,7 +75,7 @@
         </div>
     </section>
 
-    <section class="project-section" id="projects">
+    <section class="project-section" id="projects" data-scroll>
         <div class="main-container">
             <h2 class="project-title">Projects</h2>
             <div class="projects">
@@ -105,7 +117,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" data-scroll>
         <div class="main-container">
             <h2 class="project-title" id="contact">Contact</h2>
             <form method="POST" class="contact-form" name="contact" netlify>
@@ -135,6 +147,10 @@
             </div>
         </div>
     </section>
-    
+
+    <script>
+        ScrollOut();
+    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
