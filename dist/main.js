@@ -11,7 +11,7 @@ menuBtn.addEventListener('click', () => {
         menuBtn.classList.add('open');
         menuOpen = true;
         overlay.style.display = 'block';
-        sideMenu.style.left = '70%';
+        sideMenu.style.left = '65%';
     } else {
         menuBtn.classList.remove('open');
         menuOpen = false;
