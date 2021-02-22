@@ -9,18 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1b2de11c6b.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 <body>
     <div class="overlay"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark p-4 mb-4">
-        <a class="navbar-brand" href="#">Diego</a>
+    <nav class="main-nav navbar navbar-expand-lg navbar-light p-4">
             <div class="ml-auto nav-right" id="wide-links">
                 <a href="#about" class="mr-4">About</a>
                 <a href="#projects" class="mr-4">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#services" class="mr-4">Services</a>
+                <a href="#contact" class="mr-4">Contact</a>
             </div>
             <div class="menu-btn">
                 <div class="menu-btn-burger"></div>
@@ -29,16 +29,21 @@
                 <ul class="menu-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
     </nav>
 
     <section class="title-section">
-        <div class="main-container">
-            <h1 class="title">Hi, I'm Diego.</h1>
-            <p class="lead-in">I develop websites and web applications using a variety of tools to provide the best user experience.</p>
-            <a href="#projects" class="outline-btn">See my work</a>
+        <div class="showcase-container">
+            <h1 class="title">Need a website?</h1>
+            <p class="lead-in">Hi, my name is  Diego and  I develop websites and web applications  providing an amazing user experience.</p>
+            <a href="#services" class="btn blue-btn">Get started</a>
+            <a href="#projects" class="btn dark-btn ml-2">My work</a>
+        </div>
+        <div class="showcase-img">
+            <img class="main-img" src="./images/showcasepic.svg" alt="">
         </div>
     </section>
 
@@ -49,7 +54,7 @@
                     <h2>About Me</h2>
                     <p>I’m a software developer who likes to build awesome things that provide value to other people. </p>
                     <p>I like to create and build new applications every day to improve my skills as a software developer. I love to learn new things and improve my skills by practicing every day.</p>
-                    <p>Currently I’m in high school and I’m to learn new technologies and build new things.</p>
+                    <p>Currently I’m in high school and I’m eager to learn new technologies and build new things.</p>
                     <div class="grid">
                         <div class="techs">
                             <h4>Languages</h4>
@@ -69,64 +74,125 @@
                     </div>
                 </div>
                 <div class="img-container">
-                    <img class="person-img" src="./images/my-pic.jpg">
+                    <img class="person-img" src="./images/portfolio pic.jpeg">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="project-section" id="projects" data-scroll>
-        <div class="main-container">
-            <h2 class="project-title">Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <img class="placeholder-img" src="./images/instagram-clone-picture.PNG">
-                    <!-- <iframe src="https://giphy.com/embed/nNEgC6T1OLEN2cFMZk" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nNEgC6T1OLEN2cFMZk"></a></p> -->
-                    <div class="card-content">
-                        <h5>Instagram Clone</h5>
-                        <p>A clone version of Instagram with features from the original app.</p>
-                        <div class="d-flex">
-                            <a href="#"><i class="fas fa-external-link-alt fa-lg mr-2"></i></a>
-                            <a href="https://github.com/Diegoav87/Gameize"><i class="fab fa-github fa-lg"></i></a>
-                        </div>
+        <div class="project-container">
+            <h2 class="project-title mb-4">Projects</h2>
+            <div class="project-right">
+                <img class="placeholder-img" src="./images/instagram-clone-picture.PNG">
+                <div class="project-info">
+                    <h3>Instagram Clone</h3>
+                    <p>A clone version of Instagram with features from the original app.</p>
+                    <div class="d-flex">
+                        <a href="#projects" class="btn blue-btn">Site</a>
+                        <a href="#projects" class="btn dark-btn ml-2">Github</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img class="placeholder-img" src="./images/gameize-picture.PNG">
-                    <div class="card-content">
-                        <h5>Game Selling Website</h5>
-                        <p>A website for buying and selling videogames.</p>
-                        <div class="d-flex">
-                            <a href="#"><i class="fas fa-external-link-alt fa-lg mr-2"></i></a>
-                            <a href="https://github.com/Diegoav87/Instagram-Clone"><i class="fab fa-github fa-lg"></i></a>
-                        </div>
+            </div>
+            <div class="project-left">
+                <div class="project-info">
+                    <h3>Poll App</h3>
+                    <p>With this application you can post polls about any topic and also answer them.</p>
+                    <div class="d-flex">
+                        <a href="https://poll-app-diegoav87.herokuapp.com/" class="btn blue-btn">Site</a>
+                        <a href="https://github.com/Diegoav87/Poll-App" class="btn dark-btn ml-2">Github</a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img class="placeholder-img" src="./images/poll-app-picture.PNG">
-                    <div class="card-content">
-                        <h5>Poll App</h5>
-                        <p>An app for answering and posting polls.</p>
-                        <div class="d-flex">
-                            <a href="https://poll-app-diegoav87.herokuapp.com/"><i class="fas fa-external-link-alt fa-lg mr-2"></i></a>
-                            <a href="https://github.com/Diegoav87/Poll-App"><i class="fab fa-github fa-lg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img class="placeholder-img" src="./images/pokelix-pic.PNG">
-                    <div class="card-content">
-                        <h5>Pokelix</h5>
-                        <p>In this app you can search any pokemon you want.</p>
-                        <div class="d-flex">
-                            <a href="https://pokelix.herokuapp.com/"><i class="fas fa-external-link-alt fa-lg mr-2"></i></a>
-                            <a href="https://github.com/Diegoav87/Pokelix"><i class="fab fa-github fa-lg"></i></a>
-                        </div>
+                <img class="placeholder-img" src="./images/poll-app-picture.PNG">
+            </div>
+            <div class="project-right">
+                <img class="placeholder-img" src="./images//pokelix-pic.PNG">
+                <div class="project-info">
+                    <h3>Pokelix</h3>
+                    <p>In pokelix you can search any pokemon you want and see details about it.</p>
+                    <div class="d-flex">
+                        <a href="https://pokelix.herokuapp.com/" class="btn blue-btn">Site</a>
+                        <a href="https://github.com/Diegoav87/Pokelix" class="btn dark-btn ml-2">Github</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="services-section" id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img class="service-img" src="./images/web-item.svg" alt="">
+                <div class="service-info">
+                    <h4>Websites</h4>
+                    <p>Get a simple website to get more clients for your business.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img class="service-img" src="./images/undraw_server_q2pb.svg" alt="">
+                <div class="service-info">
+                    <h4>Web Applications</h4>
+                    <p>Integration of complete web applications for your business.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img class="service-img" src="./images/responsive-item.svg" alt="">
+                <div class="service-info">
+                    <h4>Responsive Design</h4>
+                    <p>Fully responsive websites will make your website user-friendly in all devices.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img class="service-img" src="./images/responsive-item.svg" alt="">
+                <div class="service-info">
+                    <h4>API</h4>
+                    <p>Integration of an API for your web application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="pricing-section"  id="pricing" data-scroll>
+        <h2>Pricing</h2>
+        <div class="pricing-container mt-4">
+            <div class="pricing-card">
+                <div class="pricing-header basic-header">
+                    <h3>Basic</h3>
+                </div>
+                <div class="pricing-body">
+                    <p>For someone who just wants a simple website.</p>
+                    <p>Basic Design</p>
+                    <p>Responsive</p>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header standard-header">
+                    <h3>Standard</h3>
+                </div>
+                <div class="pricing-body">
+                    <p>For someone who just wants a web application</p>
+                    <p>Basic Design</p>
+                    <p>Responsive</p>
+                    <p>Backend</p>
+                    <p>Hosting</p>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-header premium-header">
+                    <h3>Premium</h3>
+                </div>
+                <div class="pricing-body">
+                    <p>For someone who just wants a large and scalable web application.</p>
+                    <p>Basic Design</p>
+                    <p>Responsive</p>
+                    <p>Backend</p>
+                    <p>Hosting</p>
+                    <p>Scalablility</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <section class="contact-section" data-scroll>
         <div class="main-container">
@@ -134,34 +200,32 @@
             <form method="POST" class="contact-form" name="contact" netlify>
                 <div class="row">
                     <div class="col">
-                        <label>Name</label>
-                        <input type="text" name="name">
+                        <input   type="text" name="name" placeholder="Name">
                     </div>
                     <div class="col">
-                        <label>Email</label>
-                        <input type="text" name="email">
+                        <input  type="text" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div>
-                    <label>Subject</label>
-                    <input type="text" name="subject">
+                    <input  type="text" name="subject" placeholder="Subject">
                 </div>
                 <div>
-                    <label>Message</label>
-                    <textarea name="message" cols="30" rows="5"></textarea>
+                    <textarea name="message"  cols="30" rows="5" placeholder="Message"></textarea>
                 </div>
-                <button type="submit" class="contact-btn">Submit</button>
+                <button type="submit" class="btn blue-btn contact-btn">Submit</button>
             </form>
             <div class="contact-icons">
                 <a href="https://github.com/Diegoav87"><i class="fab fa-github fa-2x mr-2"></i></a>
-                <a href="https://www.instagram.com/diegoabdo87/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.instagram.com/diegoabdo87/"><i class="fab fa-instagram fa-2x mr-2"></i></a>
+                <a href="https://stackoverflow.com/users/14572937/diegoa87"><i class="fab fa-stack-overflow fa-2x"></i></a>
             </div>
+            <p class="attribution">The colorful backgrounds of the website were customized at <a href="https://www.svgbackgrounds.com/">SVGBackgrounds</a>.</p>
         </div>
     </section>
+    <footer class="footer">
+        <p>&copy; 2021 Diego Abdo</p>
+    </footer>
 
-    <script>
-        ScrollOut();
-    </script>
     <script src="./main.js"></script>
 </body>
 </html>
