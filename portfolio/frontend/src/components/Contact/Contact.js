@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import { Alert } from "react-bootstrap";
 
 const Contact = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6ryhoi5",
+        "template_4pnysiq",
+        e.target,
+        "user_JL6NzPnMaotSs4yuGZF3U"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          if (result.text === "OK") {
+            setShowAlert(true);
+            setTimeout(() => {
+              setShowAlert(false);
+            }, 5000);
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div>
       <section className="contact-section" data-scroll>
@@ -9,11 +40,17 @@ const Contact = () => {
             Contact
           </h2>
           <form
+            onSubmit={sendEmail}
             method="POST"
             className="contact-form"
             name="contact"
             data-netlify="true"
           >
+            {showAlert ? (
+              <Alert variant="success">
+                Thank you! Your form submission has been received.
+              </Alert>
+            ) : null}
             <div className="row">
               <div className="col">
                 <input type="text" name="name" placeholder="Name" />
