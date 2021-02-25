@@ -9,19 +9,17 @@ import { Suspense } from "react";
 
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <div className="App">
-        <Navbar />
-        <Title />
-        <About />
-        <Projects />
-        <Services />
-        <Contact />
-        <footer className="footer">
-          <p>&copy; 2021 Diego Abdo</p>
-        </footer>
-      </div>
-    </Suspense>
+    <div className="App">
+      <Navbar />
+      <Title />
+      <About />
+      <Projects />
+      <Services />
+      <Contact />
+      <footer className="footer">
+        <p>&copy; 2021 Diego Abdo</p>
+      </footer>
+    </div>
   );
 }
 
