@@ -5,7 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
 function App() {
   return (
