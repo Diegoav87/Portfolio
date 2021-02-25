@@ -1,0 +1,52 @@
+{
+    "title": "Need a website?",
+    "lead": "Hi, my name is Diego and I develop websites and web applications providing an amazing user experience.",
+    "getStarted": "Get started",
+    "myWork": "My work",
+    "navLinks": {
+        "about": "About",
+        "projects": "Projects",
+        "services": "Services",
+        "contact": "Contact",
+        "languages": {
+            "spanish": "Spanish",
+            "english": "English"
+        }
+    },
+    "about": {
+        "title": "About Me",
+        "p1": "I am a software developer who builds amazing websites and web applications with some of the best technologies.",
+        "p2": "I build new projects every day for learning more about web programming. Currently, I’m doing freelancing for building projects and become a better software developer.",
+        "languages": "Languages"
+    },
+    "and": "and",
+    "projects": {
+        "title": "Projects",
+        "p1t": "Poll App",
+        "p1p": "With this application, you can post polls about any topic and also answer them." ,
+        "p2p": "In pokelix, you can search any pokemon you want and see details about it.",
+        "website": "Website"
+    },
+    "services": {
+        "title": "Services",
+        "s1t": "Websites",
+        "s2t": "Web Applications",
+        "s3t": "Responsive Design",
+        "s4t": "API",
+        "s1p": "Get a simple website to get more clients for your business.",
+        "s2p": "Integration of complete web applications for your business.",
+        "s3p": "Fully responsive websites will make your website user-friendly in all devices.",
+        "s4p": "Integration of an API for your web application."
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "submit": "Submit",
+        "attribution": "The colorful backgrounds of the website were customized at ",
+        "confirmation": "Thank you! Your form submission has been received."
+    }
+    
+}

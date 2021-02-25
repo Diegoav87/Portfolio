@@ -1,0 +1,51 @@
+{
+    "title": "Necesitas un sitio web?",
+    "lead": "Hola, mi nombre es Diego y desarrollo sitios web y aplicaciones web que brindan una experiencia de usuario increíble.",
+    "getStarted": "Empezar",
+    "myWork": "Mi trabajo",
+    "navLinks": {
+        "about": "Acerca de",
+        "projects": "Projectos",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "languages": {
+            "spanish": "Español",
+            "english": "Inglés"
+        }
+    },
+    "about": {
+        "title": "Acerca De Mí",
+        "p1": "Soy un desarrollador de software que crea sitios web y aplicaciones web increíbles con algunas de las mejores tecnologías.",
+        "p2": "Todos los días construyo nuevos proyectos para aprender más sobre programación web. Actualmente, estoy trabajando como freelancer para crear proyectos y convertirme en un mejor desarrollador de software.",
+        "languages": "Lenguajes"
+    },
+    "and": "y",
+    "projects": {
+        "title": "Projects",
+        "p1t": "Encuestas",
+        "p1p": "Con esta aplicación, puedes publicar encuestas sobre cualquier tema y también responderlas." ,
+        "p2p": "En pokelix, puedes buscar cualquier pokemon que quieras y ver detalles sobre él.",
+        "website": "Sitio web"
+    },
+    "services": {
+        "title": "Servicios",
+        "s1t": "Sitios Web",
+        "s2t": "Aplicaciones Web",
+        "s3t": "Web Adaptativa",
+        "s4t": "API",
+        "s1p": "Obtenga un sitio web sencillo para conseguir más clientes para su negocio.",
+        "s2p": "Integración de aplicaciones web completas para su negocio.",
+        "s3p": "Los sitios web adaptativos harán que su sitio web sea fácil de ver en todos los dispositivos.",
+        "s4p": "Integración de una API para su aplicación web."
+    },
+    "contact": {
+        "title": "Contacto",
+        "name": "Nombre",
+        "email": "Correo",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "submit": "Enviar",
+        "attribution": "Los fondos coloridos del sitio web se personalizaron en ",
+        "confirmation": "¡Gracias! Se ha recibido el envío de su formulario."
+    }
+}

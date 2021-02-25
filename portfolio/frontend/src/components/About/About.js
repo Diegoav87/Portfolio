@@ -1,30 +1,26 @@
 import React from "react";
 import pic from "../../assets/images/port-pic.jpeg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="about-section" id="about" data-scroll>
         <div className="main-container">
           <div className="grid-about">
             <div className="about-info">
-              <h2>About Me</h2>
-              <p>
-                I’m a software developer who builds amazing websites and web
-                applications with some of the best technologies.
-              </p>
-              <p>
-                I build new projects every day for learning more about web
-                programming. Currently, I’m doing freelancing for building
-                projects and become a better software developer.
-              </p>
+              <h2>{t("about.title")}</h2>
+              <p>{t("about.p1")}</p>
+              <p>{t("about.p2")}</p>
               <div className="grid">
                 <div className="techs">
-                  <h4>Languages</h4>
+                  <h4>{t("about.languages")}</h4>
                   <ul>
                     <li>Javascript</li>
                     <li>Python</li>
-                    <li>HTML and CSS</li>
+                    <li>HTML {t("and")} CSS</li>
                   </ul>
                 </div>
                 <div className="techs">

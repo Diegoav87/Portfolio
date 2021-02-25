@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Alert } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,7 +39,7 @@ const Contact = () => {
       <section className="contact-section" data-scroll>
         <div className="main-container">
           <h2 className="project-title" id="contact">
-            Contact
+            {t("contact.title")}
           </h2>
           <form
             onSubmit={sendEmail}
@@ -47,31 +49,41 @@ const Contact = () => {
             data-netlify="true"
           >
             {showAlert ? (
-              <Alert variant="success">
-                Thank you! Your form submission has been received.
-              </Alert>
+              <Alert variant="success">{t("contact.confirmation")}</Alert>
             ) : null}
             <div className="row">
               <div className="col">
-                <input type="text" name="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder={t("contact.name")}
+                />
               </div>
               <div className="col">
-                <input type="text" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder={t("contact.email")}
+                />
               </div>
             </div>
             <div>
-              <input type="text" name="subject" placeholder="Subject" />
+              <input
+                type="text"
+                name="subject"
+                placeholder={t("contact.subject")}
+              />
             </div>
             <div>
               <textarea
                 name="message"
                 cols="30"
                 rows="5"
-                placeholder="Message"
+                placeholder={t("contact.message")}
               ></textarea>
             </div>
             <button type="submit" className="btn blue-btn contact-btn">
-              Submit
+              {t("contact.submit")}
             </button>
           </form>
           <p className="text-white text-center">diegoabdov@gmail.com</p>
@@ -87,7 +99,7 @@ const Contact = () => {
             </a>
           </div>
           <p className="attribution">
-            The colorful backgrounds of the website were customized at{" "}
+            {t("contact.attribution")}
             <a href="https://www.svgbackgrounds.com/">SVGBackgrounds</a>.
           </p>
         </div>

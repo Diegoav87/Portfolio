@@ -491,7 +491,7 @@ a:hover {
     height: 40px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    margin-left: auto;
+    margin-left: 20px;
     z-index: 100;
   }
 

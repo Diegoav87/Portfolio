@@ -1,13 +1,30 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "./Navbar.css";
 
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const [showLanguages, setShowLanguages] = useState(false);
 
   const handleBurgerClick = () => {
     if (open === false) {
       setOpen(true);
     } else {
       setOpen(false);
+    }
+  };
+
+  const changeLanguage = (ln, flagCode) => {
+    i18n.changeLanguage(ln);
+    setShowLanguages(false);
+  };
+
+  const handleLanguageClick = () => {
+    if (showLanguages === false) {
+      setShowLanguages(true);
+    } else {
+      setShowLanguages(false);
     }
   };
 
@@ -21,17 +38,44 @@ const Navbar = (props) => {
       <nav className="main-nav navbar navbar-expand-lg navbar-light p-4">
         <div className="ml-auto nav-right" id="wide-links">
           <a href="#about" className="mr-4">
-            About
+            {t("navLinks.about")}
           </a>
           <a href="#projects" className="mr-4">
-            Projects
+            {t("navLinks.projects")}
           </a>
           <a href="#services" className="mr-4">
-            Services
+            {t("navLinks.services")}
           </a>
           <a href="#contact" className="mr-4">
-            Contact
+            {t("navLinks.contact")}
           </a>
+        </div>
+        <div className="lang-menu">
+          <div className="selected-lang" onClick={handleLanguageClick}>
+            <div
+              className="selected-flag"
+              style={
+                i18n.language === "en"
+                  ? {
+                      backgroundImage: `url(https://www.countryflags.io/us/flat/32.png)`,
+                    }
+                  : {
+                      backgroundImage: `url(https://www.countryflags.io/es/flat/32.png)`,
+                    }
+              }
+            ></div>
+            {i18n.language === "en" ? "English" : "Español"}
+          </div>
+          {showLanguages ? (
+            <ul style={{ display: "block" }}>
+              <li className="es" onClick={() => changeLanguage("es", "es")}>
+                {t("navLinks.languages.spanish")}
+              </li>
+              <li className="en" onClick={() => changeLanguage("en", "us")}>
+                {t("navLinks.languages.english")}
+              </li>
+            </ul>
+          ) : null}
         </div>
         <div
           className={open ? "menu-btn open" : "menu-btn"}

@@ -1,13 +1,16 @@
 import React from "react";
 import pokelixPic from "../../assets/images/pokelix-pic.PNG";
 import pollAppPic from "../../assets/images/poll-app-picture.PNG";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <section className="project-section" id="projects" data-scroll>
         <div className="project-container">
-          <h2 className="project-title mb-4">Projects</h2>
+          <h2 className="project-title mb-4">{t("projects.title")}</h2>
           {/* <div className="project-right">
                 <img className="placeholder-img" src="./images/instagram-clone-picture.PNG">
                 <div className="project-info">
@@ -21,17 +24,14 @@ const Projects = () => {
             </div> */}
           <div className="project-left">
             <div className="project-info">
-              <h3>Poll App</h3>
-              <p>
-                With this application, you can post polls about any topic and
-                also answer them.
-              </p>
+              <h3>{t("projects.p1t")}</h3>
+              <p>{t("projects.p1p")}</p>
               <div className="d-flex">
                 <a
                   href="https://poll-app-diegoav87.herokuapp.com/"
                   className="btn blue-btn"
                 >
-                  Site
+                  {t("projects.website")}
                 </a>
                 <a
                   href="https://github.com/Diegoav87/Poll-App"
@@ -47,16 +47,13 @@ const Projects = () => {
             <img className="placeholder-img" src={pokelixPic} alt="" />
             <div className="project-info">
               <h3>Pokelix</h3>
-              <p>
-                In pokelix, you can search any pokemon you want and see details
-                about it.
-              </p>
+              <p>{t("projects.p2p")}</p>
               <div className="d-flex">
                 <a
                   href="https://pokelix.herokuapp.com/"
                   className="btn blue-btn"
                 >
-                  Site
+                  {t("projects.website")}
                 </a>
                 <a
                   href="https://github.com/Diegoav87/Pokelix"
