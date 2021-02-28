@@ -57,6 +57,11 @@ a:hover {
   margin: 0;
 }
 
+.logo {
+  max-height: 25px;
+  max-width: 48px;
+}
+
 .side-menu {
   position: fixed;
   height: 100%;
