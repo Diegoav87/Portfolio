@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./Navbar.css";
 import logo from "../../assets/images/small-logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
@@ -37,9 +38,10 @@ const Navbar = (props) => {
         <div className="overlay" style={{ display: "none" }}></div>
       )}
       <nav className="main-nav navbar navbar-expand-lg navbar-light p-4">
-        <a className="navbar-brand" href="!#">
+        <Link to="/">
           <img src={logo} className="logo mr-2" alt="" />
-        </a>
+        </Link>
+
         <div className="ml-auto nav-right" id="wide-links">
           <a href="#about" className="mr-4">
             {t("navLinks.about")}

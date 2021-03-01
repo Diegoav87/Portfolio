@@ -6,10 +6,11 @@ import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 // import { Suspense } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
+const Home = () => {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <Title />
       <About />
@@ -20,6 +21,18 @@ function App() {
         <p>&copy; 2021 Diego Abdo</p>
       </footer>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
