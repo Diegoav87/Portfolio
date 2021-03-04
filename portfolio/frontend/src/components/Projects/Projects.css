@@ -1,0 +1,28 @@
+.project-grid {
+  width: 75%;
+  margin: auto;
+}
+
+.rec.rec-arrow {
+  color: white;
+  border: 1px solid white;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus,
+button.rec {
+  box-shadow: 0 0 1px 3px white;
+}
+
+button.rec-dot:active,
+button.rec-dot:focus {
+  background-color: white;
+}
+
+@media (max-width: 550px) {
+  .project-grid {
+    width: 95%;
+    text-align: center;
+  }
+}

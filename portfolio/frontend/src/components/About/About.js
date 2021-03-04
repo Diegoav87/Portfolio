@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "../../assets/images/port-pic.jpeg";
 import { useTranslation } from "react-i18next";
+import "./About.css";
 
 const About = () => {
   const { t } = useTranslation();
@@ -14,23 +15,16 @@ const About = () => {
               <h2>{t("about.title")}</h2>
               <p>{t("about.p1")}</p>
               <p>{t("about.p2")}</p>
-              <div className="grid">
-                <div className="techs">
-                  <h4>{t("about.languages")}</h4>
-                  <ul>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>HTML {t("and")} CSS</li>
-                  </ul>
-                </div>
-                <div className="techs">
-                  <h4>Frameworks</h4>
-                  <ul>
-                    <li>Django</li>
-                    <li>React</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
+              <h4>Tecnologías</h4>
+              <div className="tec-grid mt-2">
+                <span className="tec">Javascript</span>
+                <span className="tec">Python</span>
+                <span className="tec">HTML {t("and")} CSS</span>
+                <span className="tec">Postgres</span>
+                <span className="tec">React</span>
+                <span className="tec">Django</span>
+                <span className="tec">Wordpress</span>
+                <span className="tec">Bootstrap</span>
               </div>
             </div>
             <div className="img-container">

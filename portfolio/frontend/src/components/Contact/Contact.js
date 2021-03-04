@@ -95,7 +95,10 @@ const Contact = () => {
               <i className="fab fa-instagram fa-2x mr-2"></i>
             </a>
             <a href="https://stackoverflow.com/users/14572937/diegoa87">
-              <i className="fab fa-stack-overflow fa-2x"></i>
+              <i className="fab fa-stack-overflow fa-2x mr-2"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCWvinsn7iTIha1WqhgxstBQ">
+              <i className="fab fa-youtube fa-2x"></i>
             </a>
           </div>
           <p className="attribution">

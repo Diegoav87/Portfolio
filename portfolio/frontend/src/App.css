@@ -184,7 +184,7 @@ a:hover {
 }
 
 .img-container {
-  width: 60%;
+  width: 100%;
 }
 
 /* services */
@@ -545,6 +545,18 @@ a:hover {
   }
 
   @media (max-width: 470px) {
+    body p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .showcase-container,
+    .project-section {
+      text-align: center;
+    }
+
     .showcase-container {
       width: 85%;
     }

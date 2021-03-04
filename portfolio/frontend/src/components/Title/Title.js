@@ -13,7 +13,7 @@ const Title = () => {
             {t("title")}
           </h1>
           <p className="lead-in">{t("lead")}</p>
-          <a href="#services" className="btn blue-btn">
+          <a href="#services" className="btn blue-btn" id="showcase-first-btn">
             {t("getStarted")}
           </a>
           <a href="#projects" className="btn dark-btn ml-2">

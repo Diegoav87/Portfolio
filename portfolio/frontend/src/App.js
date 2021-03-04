@@ -18,7 +18,7 @@ const Home = () => {
       <Services />
       <Contact />
       <footer className="footer">
-        <p>&copy; 2021 Diego Abdo</p>
+        <p>&copy; 2021 Diego Abdo.</p>
       </footer>
     </div>
   );
