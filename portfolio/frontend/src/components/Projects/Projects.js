@@ -1,6 +1,6 @@
 import React from "react";
-import pokelixPic from "../../assets/images/pokelix-pic.PNG";
-import pollAppPic from "../../assets/images/poll-app-picture.PNG";
+import pokelixPic from "../../assets/images/pokelixgif.gif";
+import pollAppPic from "../../assets/images/pollappgif.gif";
 import { useTranslation } from "react-i18next";
 import "./Projects.css";
 import Project from "./Project/Project";

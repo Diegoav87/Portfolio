@@ -91,7 +91,7 @@ const Contact = () => {
             <a href="https://github.com/Diegoav87">
               <i className="fab fa-github fa-2x mr-2"></i>
             </a>
-            <a href="https://www.instagram.com/diegoabdo87/">
+            <a href="https://www.instagram.com/diego.devs/">
               <i className="fab fa-instagram fa-2x mr-2"></i>
             </a>
             <a href="https://stackoverflow.com/users/14572937/diegoa87">

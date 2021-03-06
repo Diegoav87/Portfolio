@@ -1,12 +1,12 @@
 .project {
-  padding: 40px;
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
   text-align: center;
   transition: 0.3s;
-  background-position: 50% 100%;
   border-radius: 10px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .project-data {

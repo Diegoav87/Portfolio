@@ -395,6 +395,13 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
+  .person-img {
+    max-width: 60%;
+    max-height: 60%;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
   .grid-about {
     display: block;
   }
